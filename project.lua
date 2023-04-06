@@ -4,6 +4,8 @@ if not game:IsLoaded() then
     game.Loaded:Wait()
 end
 
+wait(5)
+
 local u = game:GetService("UserInputService")
 local store = game:GetService("ReplicatedStorage")
 local me = game:GetService("Players").LocalPlayer
