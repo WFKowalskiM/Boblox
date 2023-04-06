@@ -1,14 +1,11 @@
 local u = game:GetService("UserInputService")
-print("Hello there")
 local store = game:GetService("ReplicatedStorage")
-print("Hello there")
 local me = game:GetService("Players").LocalPlayer
-print("Hello there")
 local value1 = me.Stats.Skill1.cooldown
 local value2 = me.Stats.Skill2.cooldown
 local value3 = me.Stats.Skill3.cooldown
-print("Hello there")
 local loopy = false
+local bb = game:GetService("VirtualUser")
 print("Hello there")
 
 syn.queue_on_teleport[[
@@ -20,6 +17,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/WFKowalskiM/Boblox/ma
 function attack()
     store.Events.attack:FireServer("Slash")
 end
+
+game:service'Players'.LocalPlayer.Idled:connect(function()
+bb:CaptureController()bb:ClickButton2(Vector2.new())
+wait(2)
+end)
 
 u.InputBegan:Connect(function(input, gameProcessed)
 	if input.UserInputType == Enum.UserInputType.Keyboard then
