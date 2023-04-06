@@ -15,7 +15,7 @@ syn.queue_on_teleport[[
 repeat wait() until game:IsLoaded()
 wait(5)
 print('Loading scripto')
-"loadstring(game:HttpGet('https://pastebin.com/raw/dCDZrDcK', true))()"]]
+"loadstring(game:HttpGet('https://raw.githubusercontent.com/WFKowalskiM/Boblox/main/project.lua', true))()"]]
 
 function attack()
     store.Events.attack:FireServer("Slash")
