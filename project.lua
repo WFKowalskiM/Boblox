@@ -35,6 +35,10 @@ u.InputBegan:Connect(function(input, gameProcessed)
 		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 10
 		elseif input.KeyCode == Enum.KeyCode.M then
 		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight - 10
+		elseif input.KeyCode == Enum.KeyCode.V then
+		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 80	
+		elseif input.KeyCode == Enum.KeyCode.B then
+		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 80	
 		end
 end
 end)
