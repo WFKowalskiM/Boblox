@@ -5,7 +5,7 @@ local value1 = me.Stats.Skill1.cooldown
 local value2 = me.Stats.Skill2.cooldown
 local value3 = me.Stats.Skill3.cooldown
 local loopattack = false
-local loopskills = false
+local loopskills = true
 local bb = game:GetService("VirtualUser")
 print("Hello there")
 
