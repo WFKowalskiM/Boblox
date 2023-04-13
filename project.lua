@@ -51,7 +51,9 @@ value1:GetPropertyChangedSignal("Value"):Connect(function()
     if loopskills then 
         if value1.Value == 0 then
 	    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight - 60
+		task.wait(0.5)
             store.Events.attack:FireServer("Skill", "Skill1", "Attack")
+		task.wait(0.5)
 	    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 60
         end
     end
