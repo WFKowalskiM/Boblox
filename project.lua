@@ -41,7 +41,7 @@ u.InputBegan:Connect(function(input, gameProcessed)
 		elseif input.KeyCode == Enum.KeyCode.V then
 		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 80	
 		elseif input.KeyCode == Enum.KeyCode.B then
-		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 80
+		    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight - 80
 		end
 end
 end)
@@ -50,7 +50,9 @@ end)
 value1:GetPropertyChangedSignal("Value"):Connect(function()
     if loopskills then 
         if value1.Value == 0 then
+	    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight - 60
             store.Events.attack:FireServer("Skill", "Skill1", "Attack")
+	    me.Character.Humanoid.HipHeight = me.Character.Humanoid.HipHeight + 60
         end
     end
 end)
